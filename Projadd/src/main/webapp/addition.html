@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ADD</title>
+</head>
+<body>
+<form>
+  First number:<br>
+  <input type="text" id="num1"  ><br>
+  Second number:<br>
+  <input type="text" id="num2" >
+  <input type="button" value="Add" onclick="add()">
+  
+  
+  	  Answer:  <input type="answer" id="ans">
+	
+
+</form>
+
+<script>
+
+function add(){
+	var x=document.getElementById("num1").value;
+	var y=document.getElementById("num2").value;
+	
+	 if(isNaN(x)){
+		 alert("String...Addition not possible"); 
+	}
+	 else if(isNaN(y)){                      
+		 alert("String...Addition not possible"); 
+		}
+		
+	 else{
+		 
+		
+		 var sum=parseFloat(x)+parseFloat(y);
+		 document.getElementById("ans").value=sum;
+	 }
+	  
+
+}
+</script>
+
+
+</body>
+</html>
